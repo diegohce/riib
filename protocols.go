@@ -1,5 +1,6 @@
 package main
 
+// Protocol : spec between requests and calls
 type Protocol struct {
 	Remote      string `json:"remote"`
 	Data        string `json:"data"`
