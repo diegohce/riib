@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/julienschmidt/httprouter"
 	"io/ioutil"
-	"net/http"
 	"log"
+	"net/http"
 )
 
 func requestHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
