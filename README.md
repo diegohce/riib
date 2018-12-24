@@ -7,7 +7,7 @@ Agent for asynchronous request for web applications.
 Riib is not finished yet, and this readme lacks a lot of detail (it's still a work in progress).
 
 # Protocols
-Response for every protocol
+Response for every protocol you will receive as a POST request to callback_url specified:
 
 ```
 {
