@@ -9,7 +9,6 @@ type Protocol struct {
 	Ticket      string
 }
 
-
 type protocolHandler func(*Protocol)
 
 var (
@@ -19,6 +18,6 @@ var (
 func init() {
 	protocols = map[string]protocolHandler{
 		"http": httpProtocolHandler,
-		"raw" : rawProtocolHandler,
+		"raw":  rawProtocolHandler,
 	}
 }

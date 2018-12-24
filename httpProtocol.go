@@ -20,7 +20,7 @@ func httpProtocolHandler(p *Protocol) {
 
 	switch method {
 
-		case "GET":
+	case "GET":
 		{
 			var err error
 
@@ -31,7 +31,7 @@ func httpProtocolHandler(p *Protocol) {
 				return
 			}
 		}
-		default:
+	default:
 		{
 			var err error
 
