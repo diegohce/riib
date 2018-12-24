@@ -7,7 +7,6 @@ import (
 	"net/http"
 )
 
-
 func httpProtocolHandler(p *Protocol) {
 
 	client := http.Client{}
@@ -56,5 +55,3 @@ func httpProtocolHandler(p *Protocol) {
 
 	sendResponseCallback(p, string(body))
 }
-
-

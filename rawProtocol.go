@@ -1,13 +1,11 @@
 package main
 
-
 import (
 	"fmt"
 	"log"
 	"net"
 	"strconv"
 )
-
 
 func rawProtocolHandler(p *Protocol) {
 
@@ -48,5 +46,3 @@ func rawProtocolHandler(p *Protocol) {
 
 	sendResponseCallback(p, response)
 }
-
-

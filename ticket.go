@@ -6,7 +6,6 @@ import (
 	"fmt"
 )
 
-
 func newTicket(p *Protocol) string {
 
 	h := sha256.New()
@@ -19,4 +18,3 @@ func newTicket(p *Protocol) string {
 
 	return rv
 }
-

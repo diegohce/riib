@@ -1,6 +1,5 @@
 package main
 
-
 type Protocol struct {
 	Remote      string `json:"remote"`
 	Data        string `json:"data"`
@@ -23,5 +22,3 @@ func init() {
 		"raw" : rawProtocolHandler,
 	}
 }
-
-

@@ -9,7 +9,6 @@ import (
 	"log"
 )
 
-
 func requestHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 
 	protocol := ps.ByName("protocol")
@@ -56,5 +55,3 @@ func main() {
 	log.Fatal(http.ListenAndServe(":9999", router))
 
 }
-
-

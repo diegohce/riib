@@ -7,7 +7,6 @@ import (
 	"net/http"
 )
 
-
 func sendResponseCallback(p *Protocol, response string) {
 
 	myResponse := map[string]string{p.Ticket: response}
@@ -27,4 +26,3 @@ func sendResponseCallback(p *Protocol, response string) {
 	}
 	defer cbResponse.Body.Close()
 }
-
