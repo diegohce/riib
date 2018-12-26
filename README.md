@@ -12,7 +12,7 @@ Response for every protocol you will receive as a POST request to callback_url s
 ```
 {
     "ticket": "<random generated ticket>",
-	"response": "<remote response>"
+    "response": "<remote response>"
 }
 ```
 
@@ -31,7 +31,7 @@ Request:
 Response:
 ```
 {
-	"ticket": "<random generated ticket>"
+    "ticket": "<random generated ticket>"
 }
 ```
 
@@ -48,7 +48,7 @@ HTTP POST expecting json body:
 Response:
 ```
 {
-	"ticket": "<random generated ticket>"
+    "ticket": "<random generated ticket>"
 }
 ```
 
