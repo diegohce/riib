@@ -11,13 +11,15 @@ Response for every protocol you will receive as a POST request to callback_url s
 
 ```
 {
-    "<ticket>": "<remote response>"
+    "ticket": "<random generated ticket>",
+	"response": "<remote response>"
 }
 ```
 
 ## HTTP Protocol
 HTTP POST expecting json body:
 
+Request:
 ```
 {
     "method": "<POST | GET>",
@@ -26,6 +28,13 @@ HTTP POST expecting json body:
     "data": "whatever you want to send to <remote>"
 }
 ```
+Response:
+```
+{
+	"ticket": "<random generated ticket>"
+}
+```
+
 
 ## Raw Protocol
 HTTP POST expecting json body:
@@ -34,6 +43,12 @@ HTTP POST expecting json body:
     "remote: "remote_host:port",
     "callback_url": "http[s]://remote_host:port/where/to/get/the/response",
     "data": "whatever you want to send to <remote>"
+}
+```
+Response:
+```
+{
+	"ticket": "<random generated ticket>"
 }
 ```
 
