@@ -36,14 +36,15 @@ func requestHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params
 		return
 	}
 
-	//ticket := "ASDQWEERTFGHHJTYUGHJ123345567"
 	ticket := newTicket(&p)
 
 	p.Ticket = ticket
 
 	go handler(&p)
 
-	fmt.Fprintf(w, "%s", ticket)
+	w.Header().Set("Content-Type", "application/json")
+
+	fmt.Fprintf(w, "{\"ticket\":\"%s\"}", ticket)
 }
 
 func main() {

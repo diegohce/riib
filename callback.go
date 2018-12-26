@@ -9,7 +9,10 @@ import (
 
 func sendResponseCallback(p *Protocol, response string) {
 
-	myResponse := map[string]string{p.Ticket: response}
+	myResponse := map[string]string{
+		"ticket":   p.Ticket,
+		"response": response,
+	}
 
 	j, err := json.Marshal(myResponse)
 	if err != nil {
