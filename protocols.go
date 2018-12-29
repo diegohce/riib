@@ -5,7 +5,7 @@ type Protocol struct {
 	Remote      string `json:"remote"`
 	Data        string `json:"data"`
 	DataType    string `json:"data_type"`
-	CallbackUrl string `json:"callback_url"`
+	CallbackURL string `json:"callback_url"`
 	Method      string `json:"method"`
 	Ticket      string
 }

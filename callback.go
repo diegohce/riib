@@ -22,7 +22,7 @@ func sendResponseCallback(p *Protocol, response string) {
 
 	buf := bytes.NewReader(j)
 
-	cbResponse, err := http.Post(p.CallbackUrl, "application/json", buf)
+	cbResponse, err := http.Post(p.CallbackURL, "application/json", buf)
 	if err != nil {
 		log.Println(p.Ticket, err)
 		return
